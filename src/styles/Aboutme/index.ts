@@ -26,7 +26,7 @@ export const DivTitle = styled.div`
 
 export const Title = styled.h3`
   display: flex;
-  font-size: 35px;
+  font-size: 25px;
   letter-spacing: 1px;
   margin: 0;
   margin-left: 10px;
@@ -36,6 +36,7 @@ export const Title = styled.h3`
 export const DivQuotes = styled.div`
   display: flex;
   align-items: flex-start;
+  text-align: left;
   justify-content: flex-start;
   flex-direction: column;
   width: 100%;

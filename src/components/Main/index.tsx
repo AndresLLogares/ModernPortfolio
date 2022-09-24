@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import AboutMe from '../Aboutme';
 import Layout from '../Layout';
 import Technologies from '../Technologies';
+import ContactMe from '../ContactMe';
+import WorkingExperience from '../WorkingExperience';
 import NavBar from '../NavBar';
 import { Box, BoxPattern, TitleMenu } from '../../styles/Menu';
 import Title from '../Title';
@@ -19,6 +21,20 @@ const Main = () => {
           setSelectedAnimation('in');
           setSelectedComponent(AboutMe);
           setSelectedWidth('30%');
+        }, 1000);
+        return;
+      case 'ContactMe':
+        setTimeout(() => {
+          setSelectedAnimation('in');
+          setSelectedComponent(ContactMe);
+          setSelectedWidth('30%');
+        }, 1000);
+        return;
+      case 'WorkingExperience':
+        setTimeout(() => {
+          setSelectedAnimation('in');
+          setSelectedComponent(WorkingExperience);
+          setSelectedWidth('40%');
         }, 1000);
         return;
       case 'Technologies':

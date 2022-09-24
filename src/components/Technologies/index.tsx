@@ -20,7 +20,7 @@ const Technologies = () => {
   return (
     <BoxText>
       <DivTitle>
-        <MilitaryTech size={35} />
+        <MilitaryTech size={25} />
         <Title>Technologies</Title>
       </DivTitle>
       <DivTechnologies>

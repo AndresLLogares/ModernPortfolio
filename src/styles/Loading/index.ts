@@ -18,8 +18,14 @@ export const Box = styled.div`
   justify-content: center;
   background-color: #ffffff;
   opacity: 1;
-  background-image: radial-gradient(#9615db 0.45px, #ffffff 0.45px);
-  background-size: 9px 9px;
+  background-image: radial-gradient(#FBA92C 0.70px, #ffffff 0.70px);
+  background-size: 15px 15px;
+  z-index: 3;
+  @media (max-width: 1024px) {
+    height: fit-content;
+    background-size: 15px 15px;
+    overflow: hidden;
+  }
 `;
 
 export const Spinner = styled.div`

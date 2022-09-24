@@ -13,8 +13,14 @@ export const Box = styled.div`
   text-align: center;
   flex-direction: row;
   ${AnimationBox}
-	animation: scale-in-center 1s cubic-bezier(0.150, 0.460, 0.450, 0.940) both;
+  animation: scale-in-center 1s cubic-bezier(0.150, 0.460, 0.450, 0.940) both;
   z-index: 2;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+  }
 `;
 
 export const DivLogo = styled.div`
@@ -24,6 +30,12 @@ export const DivLogo = styled.div`
   text-align: center;
   margin-bottom: 2vh;
   flex-direction: column;
+  @media (max-width: 1024px) {
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+  }
 `;
 
 export const ImageLogo = styled.div`
@@ -35,6 +47,10 @@ export const ImageLogo = styled.div`
   margin-right: 25px;
   border: 0.21em solid ${Colors.purple};
   margin-bottom: 10px;
+  @media (max-width: 1024px) {
+    margin: 0;
+    margin-bottom: 15px;
+  }
 `;
 
 export const Name = styled.h1`
@@ -44,8 +60,11 @@ export const Name = styled.h1`
   color: ${Colors.black};
   margin-bottom: 10px;
   font-family: 'Nova Mono', monospace;
-/*   text-shadow: 1px 1px 0 ${Colors.purple}, 1px -1px 0 ${Colors.purple},
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+  /*   text-shadow: 1px 1px 0 ${Colors.purple}, 1px -1px 0 ${Colors.purple},
     -1px 1px 0 ${Colors.purple}, -1px -1px 0 ${Colors.purple},
     1px 0px 0 ${Colors.purple}, 0px 1px 0 ${Colors.purple},
-    -1px 0px 0 ${Colors.purple}, 0px -1px 0 ${Colors.purple};  */ 
+    -1px 0px 0 ${Colors.purple}, 0px -1px 0 ${Colors.purple};  */
 `;

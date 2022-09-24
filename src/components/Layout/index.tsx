@@ -12,7 +12,7 @@ const Layout = (props: any) => {
         muted>
         <source
           src={
-            'https://res.cloudinary.com/andreslogares/video/upload/v1663948711/Hexagon_online-video-cutter.com_1_kvlwqf.mp4'
+            'https://res.cloudinary.com/andreslogares/video/upload/v1664058995/Orange_online-video-cutter.com_qdhull.mp4'
           }
           type="video/mp4"
         />

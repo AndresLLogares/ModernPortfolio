@@ -13,7 +13,7 @@ const AboutMe = () => {
   return (
     <BoxText>
       <DivTitle>
-        <FilePerson size={35} />
+        <FilePerson size={25} />
         <Title>About Me</Title>
       </DivTitle>
       <DivQuotes>

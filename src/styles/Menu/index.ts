@@ -15,6 +15,11 @@ export const Box = styled.div`
   height: fit-content;
   flex-direction: row;
   z-index: 2;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+  }
 `;
 
 export const BoxPattern = styled.div`
@@ -25,8 +30,14 @@ export const BoxPattern = styled.div`
   width: 30%;
   height: 100vh;
   flex-direction: column;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 25px;
+  }
 `;
-
 
 export const BoxComponent = styled.div<{ width: string; animation: string }>`
   display: flex;
@@ -37,15 +48,22 @@ export const BoxComponent = styled.div<{ width: string; animation: string }>`
   flex-direction: column;
   background-color: #ffffff;
   opacity: 1;
-  background-image: radial-gradient(#9615db 0.45px, #ffffff 0.45px);
-  background-size: 9px 9px;
+  background-image: radial-gradient(#FBA92C 0.7px, #ffffff 0.7px);
+  background-size: 15px 15px;
   border-left: 5px solid ${Colors.purple};
   ${(props) =>
     props.animation === 'in' ? AnimationSlideIn : AnimationSlideOut};
   animation: ${(props) =>
     props.animation === 'in'
-      ?  'slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;'
+      ? 'slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;'
       : 'slide-out-right 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;'};
+  @media (max-width: 1024px) {
+    width: 100%;
+    height: fit-content;
+    background-size: 15px 15px;
+    border: none;
+    margin-bottom: 5vh;
+  }
 `;
 
 export const Menu = styled.div`
@@ -76,7 +94,7 @@ export const TitleMenu = styled.h3`
 
 export const TextButton = styled.h3`
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
   margin-right: 10px;
   padding: 0;

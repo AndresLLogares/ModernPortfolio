@@ -36,8 +36,6 @@ export const ButtonTechnologies = styled.a`
   transition-duration: 1s;
   transform: skewX(5deg);
   &:hover {
-   /*  box-shadow: none; */
-  /*   border: none; */
     transform: translate(20px, 20px);
     cursor: pointer;
   }
