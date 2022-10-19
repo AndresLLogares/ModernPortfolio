@@ -16,6 +16,7 @@ import { Solidity } from '@styled-icons/simple-icons/Solidity';
 import { MilitaryTech } from '@styled-icons/material-twotone/MilitaryTech';
 import {  BoxText, DivTitle, Title } from '../../styles/Aboutme';
 import { ButtonTechnologies, DivTechnologies } from '../../styles/Technologies';
+import rxjs from '../../assets/rxjs.svg';
 const Technologies = () => {
   return (
     <BoxText>
@@ -24,6 +25,13 @@ const Technologies = () => {
         <Title>Technologies</Title>
       </DivTitle>
       <DivTechnologies>
+      <ButtonTechnologies
+          rel="noreferrer"
+          target="_blank"
+          href="https://rxjs.dev/">
+          Rxjs
+          <img src={rxjs} alt='' style={{width:'30px'}} />
+        </ButtonTechnologies>
         <ButtonTechnologies
           rel="noreferrer"
           target="_blank"
