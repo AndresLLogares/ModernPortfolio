@@ -40,7 +40,7 @@ const WorkingExperience = () => {
           terminals implementing the latest technology.
         </Experience>
         <Experience>
-          ⬤ Integration of the frontend with the bank's database to perform the
+          ⬤ Integration of the frontend with the bank's database, the terminals to perform
           different operations.
         </Experience>
         <Experience>
