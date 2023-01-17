@@ -36,7 +36,7 @@ const WorkingExperience = () => {
         <Date>ALT</Date>
         <Date>MAY 2022 | PRESENT</Date>
         <Experience>
-          ⬤ I work for a bank in Argentina to the upgrade of the self-service
+          ⬤ I work for a bank in Argentina to upgrade the self-service
           terminals implementing the latest technology.
         </Experience>
         <Experience>

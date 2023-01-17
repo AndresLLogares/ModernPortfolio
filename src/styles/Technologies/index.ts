@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Colors } from '../colors';
-import { AnimationBox } from '../Animations/index';
+import styled from "styled-components";
+import { Colors } from "../colors";
+import { AnimationBox } from "../Animations/index";
 
 export const DivTechnologies = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ export const ButtonTechnologies = styled.a`
   justify-content: center;
   flex-direction: column;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: bold;
   width: 85px;
