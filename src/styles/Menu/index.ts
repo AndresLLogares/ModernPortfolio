@@ -50,7 +50,7 @@ export const BoxComponent = styled.div<{ width: string; animation: string }>`
   opacity: 1;
   background-image: radial-gradient(#FBA92C 0.7px, #ffffff 0.7px);
   background-size: 15px 15px;
-  border-left: 5px solid ${Colors.purple};
+  border-left: 5px solid ${Colors.orange};
   ${(props) =>
     props.animation === 'in' ? AnimationSlideIn : AnimationSlideOut};
   animation: ${(props) =>
@@ -74,7 +74,7 @@ export const Menu = styled.div`
   width: 70%;
   padding: 5%;
   height: fit-content;
-  border: ${Colors.purple} solid 5px;
+  border: ${Colors.orange} solid 5px;
   ${AnimationText}
   animation: focus-in-expand-fwd 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     backwards;
@@ -84,7 +84,7 @@ export const TitleMenu = styled.h3`
   font-size: 35px;
   letter-spacing: 1px;
   margin: 0;
-  color: ${Colors.purple};
+  color: ${Colors.orange};
   margin-bottom: 10px;
   font-family: 'Poppins', sans-serif;
   ${AnimationText}
@@ -111,7 +111,7 @@ export const MenuItem = styled.button`
   color: ${Colors.black};
 
   &:hover {
-    color: ${Colors.purple};
+    color: ${Colors.orange};
     cursor: pointer;
     transition-duration: 2s;
   }

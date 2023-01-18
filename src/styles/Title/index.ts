@@ -45,7 +45,7 @@ export const ImageLogo = styled.div`
   background-image: url(${Logo});
   border-radius: 5px;
   margin-right: 25px;
-  border: 0.21em solid ${Colors.purple};
+  border: 0.21em solid ${Colors.orange};
   margin-bottom: 10px;
   @media (max-width: 1024px) {
     margin: 0;
@@ -63,8 +63,8 @@ export const Name = styled.h1`
   @media (max-width: 1024px) {
     font-size: 20px;
   }
-  /*   text-shadow: 1px 1px 0 ${Colors.purple}, 1px -1px 0 ${Colors.purple},
-    -1px 1px 0 ${Colors.purple}, -1px -1px 0 ${Colors.purple},
-    1px 0px 0 ${Colors.purple}, 0px 1px 0 ${Colors.purple},
-    -1px 0px 0 ${Colors.purple}, 0px -1px 0 ${Colors.purple};  */
+  /*   text-shadow: 1px 1px 0 ${Colors.orange}, 1px -1px 0 ${Colors.orange},
+    -1px 1px 0 ${Colors.orange}, -1px -1px 0 ${Colors.orange},
+    1px 0px 0 ${Colors.orange}, 0px 1px 0 ${Colors.orange},
+    -1px 0px 0 ${Colors.orange}, 0px -1px 0 ${Colors.orange};  */
 `;

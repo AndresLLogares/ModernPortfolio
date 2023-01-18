@@ -30,8 +30,8 @@ export const ButtonTechnologies = styled.a`
   border-radius: 5px;
   color: ${Colors.black};
   background-color: ${Colors.white};
-  box-shadow: -5px 5px ${Colors.purple}, -4px 4px ${Colors.purple},
-    -2px 2px ${Colors.purple};
+  box-shadow: -5px 5px ${Colors.orange}, -4px 4px ${Colors.orange},
+    -2px 2px ${Colors.orange};
   border: 3px solid ${Colors.black};
   transition-duration: 1s;
   transform: skewX(5deg);

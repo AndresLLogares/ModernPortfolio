@@ -9,7 +9,7 @@ export const Date = styled.p`
   margin-bottom: 10px;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  color: ${Colors.purple};
+  color: ${Colors.orange};
 `;
 
 export const Experience = styled.p`

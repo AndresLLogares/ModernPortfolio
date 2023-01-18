@@ -33,9 +33,9 @@ export const Spinner = styled.div`
   margin-top: 20vh;
   animation: ${rotate360} 1s linear infinite;
   transform: translateZ(0);
-  border-top: 5px solid ${Colors.purple};
-  border-right: 5px solid ${Colors.purple};
-  border-bottom: 5px solid ${Colors.purple};
+  border-top: 5px solid ${Colors.orange};
+  border-right: 5px solid ${Colors.orange};
+  border-bottom: 5px solid ${Colors.orange};
   border-left: 8px solid ${Colors.black};
   background: transparent;
   width: 154px;

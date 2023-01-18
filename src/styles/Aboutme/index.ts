@@ -18,7 +18,7 @@ export const DivTitle = styled.div`
   align-items: center;
   text-align: center;
   justify-content: center;
-  color: ${Colors.purple};
+  color: ${Colors.orange};
   width: 100%;
   margin-top: 5vh;
   margin-bottom: 5vh;
