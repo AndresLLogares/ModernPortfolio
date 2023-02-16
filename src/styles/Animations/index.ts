@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { css } from "styled-components";
 
 export const AnimationBox = css`
   @keyframes scale-in-center {
@@ -9,6 +9,17 @@ export const AnimationBox = css`
     100% {
       transform: scale(1);
       opacity: 1;
+    }
+  }
+`;
+
+export const Rotation = css`
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
     }
   }
 `;

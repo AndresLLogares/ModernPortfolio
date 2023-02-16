@@ -18,7 +18,7 @@ const ChatGPT = () => {
   const [message, setMessage] = useState("");
   const [update, setUpdate] = useState(false);
   const [chat, setChat] = useState([]);
-  const [disabled, setDisabled] = useState(false);
+  const [disabled, setDisabled] = useState(true);
 
   const dateNow = () => {
     const date = new Date();
@@ -72,7 +72,7 @@ const ChatGPT = () => {
               </BoxConversation>
             ))
           : null}
-        {disabled ? (
+        {!disabled ? (
           <FormChat onSubmit={handleSubmit}>
             <InputChat
               placeholder="Write your question here"
@@ -87,7 +87,7 @@ const ChatGPT = () => {
             </ButtonChat>
           </FormChat>
         ) : (
-          <Loader />
+          <Loader></Loader>
         )}
       </BoxTextChat>
     </BoxChat>

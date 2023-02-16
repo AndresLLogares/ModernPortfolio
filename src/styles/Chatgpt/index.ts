@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Colors } from "../colors";
-import { AnimationBox } from "../Animations/index";
+import { AnimationBox, Rotation } from "../Animations/index";
 
 export const BoxChat = styled.div`
   display: flex;
@@ -54,7 +54,7 @@ export const InputChat = styled.input`
   margin-bottom: 1vh;
 `;
 
-export const ButtonChat = styled.button`
+export const ButtonChat = styled.button<{ disabled: boolean }>`
   display: flex;
   text-align: center;
   align-items: center;
@@ -70,6 +70,8 @@ export const ButtonChat = styled.button`
   margin-top: 5vh;
   margin-bottom: 5vh;
   padding: 1vh;
+  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
+  border: transparent;
   &:hover {
     opacity: 0.5;
     cursor: pointer;
@@ -120,5 +122,6 @@ export const Loader = styled.span`
   box-sizing: border-box;
   margin-top: 5vh;
   margin-bottom: 5vh;
-  animation: rotation 1s linear infinite;
+  ${Rotation}
+  animation: rotation  1s linear infinite;
 `;
