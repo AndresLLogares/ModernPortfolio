@@ -9,6 +9,7 @@ import {
   FormChat,
   FromText,
   InputChat,
+  Loader,
   TextConversation,
 } from "../../styles/Chatgpt";
 import createCompletionChatGTP from "../../API/chatgpt";
@@ -17,6 +18,7 @@ const ChatGPT = () => {
   const [message, setMessage] = useState("");
   const [update, setUpdate] = useState(false);
   const [chat, setChat] = useState([]);
+  const [disabled, setDisabled] = useState(false);
 
   const dateNow = () => {
     const date = new Date();
@@ -40,9 +42,11 @@ const ChatGPT = () => {
 
   const handleSubmit = async (event: any) => {
     event.preventDefault();
+    setDisabled(true);
     await createCompletionChatGTP(message);
     setMessage("");
     setUpdate(!update);
+    setDisabled(false);
   };
 
   useEffect(() => {
@@ -68,17 +72,23 @@ const ChatGPT = () => {
               </BoxConversation>
             ))
           : null}
-        <FormChat onSubmit={handleSubmit}>
-          <InputChat
-            placeholder="Write your question here"
-            onChange={handleInputChange}
-            type="text"
-            value={message}
-            required={true}
-            maxLength={100}
-          />
-          <ButtonChat type="submit">Send</ButtonChat>
-        </FormChat>
+        {disabled ? (
+          <FormChat onSubmit={handleSubmit}>
+            <InputChat
+              placeholder="Write your question here"
+              onChange={handleInputChange}
+              type="text"
+              value={message}
+              required={true}
+              maxLength={100}
+            />
+            <ButtonChat disabled={disabled} type="submit">
+              Send
+            </ButtonChat>
+          </FormChat>
+        ) : (
+          <Loader />
+        )}
       </BoxTextChat>
     </BoxChat>
   );

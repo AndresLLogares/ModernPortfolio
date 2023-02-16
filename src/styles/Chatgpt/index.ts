@@ -69,6 +69,12 @@ export const ButtonChat = styled.button`
   height: 40px;
   margin-top: 5vh;
   margin-bottom: 5vh;
+  padding: 1vh;
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+    transition-duration: 2s;
+  }
 `;
 
 export const BoxConversation = styled.div`
@@ -96,9 +102,23 @@ export const TextConversation = styled.div<{ color: string }>`
   font-size: 16px;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  background-color: ${(props) => (props.color === "user" ? Colors.lessGrey : Colors.white)};
+  background-color: ${(props) =>
+    props.color === "user" ? Colors.lessGrey : Colors.white};
   border: 3px solid ${Colors.black};
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
   padding: 1vh;
+`;
+
+export const Loader = styled.span`
+  width: 48px;
+  height: 48px;
+  border: 5px solid;
+  border-color: ${Colors.orange} transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  animation: rotation 1s linear infinite;
 `;
