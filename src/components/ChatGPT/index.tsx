@@ -18,7 +18,7 @@ const ChatGPT = () => {
   const [message, setMessage] = useState("");
   const [update, setUpdate] = useState(false);
   const [chat, setChat] = useState([]);
-  const [disabled, setDisabled] = useState(true);
+  const [disabled, setDisabled] = useState(false);
 
   const dateNow = () => {
     const date = new Date();
