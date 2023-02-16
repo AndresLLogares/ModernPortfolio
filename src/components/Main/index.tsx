@@ -4,6 +4,7 @@ import Layout from '../Layout';
 import Technologies from '../Technologies';
 import ContactMe from '../ContactMe';
 import WorkingExperience from '../WorkingExperience';
+import ChatGPT from '../ChatGPT';
 import NavBar from '../NavBar';
 import { Box, BoxPattern, TitleMenu } from '../../styles/Menu';
 import Title from '../Title';
@@ -42,6 +43,13 @@ const Main = () => {
           setSelectedAnimation('in');
           setSelectedWidth('50%');
           setSelectedComponent(Technologies);
+        }, 1000);
+        return;
+      case 'ChatGPT':
+        setTimeout(() => {
+          setSelectedAnimation('in');
+          setSelectedWidth('50%');
+          setSelectedComponent(ChatGPT);
         }, 1000);
         return;
       default:
