@@ -40,4 +40,4 @@ async function createCompletionChatGTP(message) {
   return response;
 }
 
-module.exports = { createCompletionChatGTP };
+export default createCompletionChatGTP

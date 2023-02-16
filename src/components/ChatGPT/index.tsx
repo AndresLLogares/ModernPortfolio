@@ -11,7 +11,7 @@ import {
   InputChat,
   TextConversation,
 } from "../../styles/Chatgpt";
-import { createCompletionChatGTP } from "../../API/chatgpt";
+import createCompletionChatGTP from "../../API/chatgpt";
 
 const ChatGPT = () => {
   const [message, setMessage] = useState("");
@@ -59,7 +59,9 @@ const ChatGPT = () => {
         {chat.length > 0
           ? chat.map((chat: any, id: number) => (
               <BoxConversation key={id}>
-                <FromText>{chat.from} {dateNow()}</FromText>
+                <FromText>
+                  {chat.from} {dateNow()}
+                </FromText>
                 <TextConversation color={chat.from}>
                   {chat.messages}
                 </TextConversation>
