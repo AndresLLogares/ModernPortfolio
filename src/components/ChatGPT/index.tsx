@@ -2,6 +2,7 @@ import { DivTitle, Title } from "../../styles/Aboutme";
 import chatgpt from "../../assets/chatgpt-icon.svg";
 import { useEffect, useState } from "react";
 import {
+  BackButton,
   BoxChat,
   BoxConversation,
   BoxTextChat,
@@ -13,21 +14,16 @@ import {
   TextConversation,
 } from "../../styles/Chatgpt";
 import createCompletionChatGTP from "../../API/chatgpt";
+import { Back } from "@styled-icons/entypo/Back";
+import { useNavigate } from "react-router-dom";
 
 const ChatGPT = () => {
   const [message, setMessage] = useState("");
   const [update, setUpdate] = useState(false);
   const [chat, setChat] = useState([]);
   const [disabled, setDisabled] = useState(false);
+  const navigate = useNavigate();
 
-  const dateNow = () => {
-    const date = new Date();
-
-    let day = date.getDate();
-    let month = date.getMonth() + 1;
-    let year = date.getFullYear();
-    return `${day}-${month}-${year}`;
-  };
   const handleInputChange = (event: any) => {
     setMessage(event.target.value);
   };
@@ -54,43 +50,48 @@ const ChatGPT = () => {
   }, [update]);
 
   return (
-    <BoxChat>
-      <BoxTextChat>
-        <DivTitle>
-          <img src={chatgpt} alt="" style={{ width: "30px" }} />
-          <Title>ChatGPT</Title>
-        </DivTitle>
-        {chat.length > 0
-          ? chat.map((chat: any, id: number) => (
-              <BoxConversation key={id}>
-                <FromText>
-                  {chat.from} {dateNow()}
-                </FromText>
-                <TextConversation color={chat.from}>
-                  {chat.messages}
-                </TextConversation>
-              </BoxConversation>
-            ))
-          : null}
-        {!disabled ? (
-          <FormChat onSubmit={handleSubmit}>
-            <InputChat
-              placeholder="Write your question here"
-              onChange={handleInputChange}
-              type="text"
-              value={message}
-              required={true}
-              maxLength={100}
-            />
-            <ButtonChat disabled={disabled} type="submit">
-              Send
-            </ButtonChat>
-          </FormChat>
-        ) : (
-          <Loader></Loader>
-        )}
-      </BoxTextChat>
-    </BoxChat>
+    <>
+      <BackButton onClick={() => navigate("/")}>
+        <Back size={20} />
+      </BackButton>
+      <BoxChat>
+        <BoxTextChat>
+          <DivTitle>
+            <img src={chatgpt} alt="" style={{ width: "30px" }} />
+            <Title>ChatGPT</Title>
+          </DivTitle>
+          {chat.length > 0
+            ? chat.map((chat: any, id: number) => (
+                <BoxConversation key={id}>
+                  <FromText>
+                    {chat?.from} {chat?.date}
+                  </FromText>
+                  <TextConversation color={chat.from}>
+                    {chat?.messages}
+                  </TextConversation>
+                </BoxConversation>
+              ))
+            : null}
+          {!disabled ? (
+            <FormChat onSubmit={handleSubmit}>
+              <InputChat
+                placeholder="Write your question here"
+                onChange={handleInputChange}
+                type="text"
+                value={message}
+                required={true}
+                maxLength={100}
+              />
+              <ButtonChat disabled={disabled} type="submit">
+                Send
+              </ButtonChat>
+            </FormChat>
+          ) : (
+            <Loader></Loader>
+          )}
+        </BoxTextChat>
+      </BoxChat>
+    </>
   );
 };
 

@@ -6,6 +6,15 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
+const dateNow = () => {
+  const date = new Date();
+
+  let day = date.getDate();
+  let month = date.getMonth() + 1;
+  let year = date.getFullYear();
+  return `${day}-${month}-${year}`;
+};
+
 const saveChatLocal = (user, response) => {
   let messages = localStorage.getItem("chat") || [];
 
@@ -16,11 +25,13 @@ const saveChatLocal = (user, response) => {
   messages.push({
     from: "user",
     messages: user,
+    date: dateNow(),
   });
 
   messages.push({
     from: "chatgpt",
     messages: response,
+    date: dateNow(),
   });
   
   localStorage.setItem("chat", JSON.stringify(messages));

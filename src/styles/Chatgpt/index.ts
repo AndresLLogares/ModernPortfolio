@@ -79,6 +79,26 @@ export const ButtonChat = styled.button<{ disabled: boolean }>`
   }
 `;
 
+export const BackButton = styled.button`
+text-align: center;
+align-items: center;
+position: fixed;
+bottom: 25px;
+right: 25px;
+background-color: ${Colors.orange};
+color: ${Colors.black};
+border-radius: 5px;
+width: 60px;
+height: 30px;
+padding: 1vh;
+border: transparent;
+&:hover {
+  opacity: 0.5;
+  cursor: pointer;
+  transition-duration: 2s;
+}
+`;
+
 export const BoxConversation = styled.div`
   display: flex;
   width: 90%;
