@@ -80,7 +80,7 @@ export const ButtonChat = styled.button<{ disabled: boolean }>`
 `;
 
 export const BackButton = styled.button`
-text-align: center;
+display: flex;
 align-items: center;
 justify-content: center;
 position: fixed;
