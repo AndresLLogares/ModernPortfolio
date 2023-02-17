@@ -94,6 +94,8 @@ height: 30px;
 padding: 1vh;
 border: transparent;
 z-index: 5;
+${AnimationBox}
+animation: scale-in-center 1s cubic-bezier(0.150, 0.460, 0.450, 0.940) both;
 &:hover {
   opacity: 0.5;
   cursor: pointer;
