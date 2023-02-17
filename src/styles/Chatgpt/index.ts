@@ -93,6 +93,7 @@ width: 60px;
 height: 30px;
 padding: 1vh;
 border: transparent;
+z-index: 5;
 &:hover {
   opacity: 0.5;
   cursor: pointer;
