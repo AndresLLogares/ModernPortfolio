@@ -83,8 +83,8 @@ export const BackButton = styled.button`
 display: flex;
 align-items: center;
 justify-content: center;
-position: fixed;
-bottom: 25px;
+position: absolute;
+top: 25px;
 right: 25px;
 background-color: ${Colors.orange};
 color: ${Colors.black};
