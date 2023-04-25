@@ -1,7 +1,7 @@
-import { BoxText, DivQuotes, DivTitle, Title } from '../../styles/Aboutme';
-import { WorkOutline } from '@styled-icons/material/WorkOutline';
-import { Pin } from '@styled-icons/boxicons-solid/Pin';
-import { Experience, Date } from '../../styles/WorkingExperience';
+import { BoxText, DivQuotes, DivTitle, Title } from "../../styles/Aboutme";
+import { WorkOutline } from "@styled-icons/material/WorkOutline";
+import { PersonNote } from "@styled-icons/fluentui-system-filled/PersonNote";
+import { Experience, Date } from "../../styles/WorkingExperience";
 
 const WorkingExperience = () => {
   return (
@@ -11,7 +11,7 @@ const WorkingExperience = () => {
         <Title>Working Experience</Title>
       </DivTitle>
       <DivQuotes>
-        <Pin size={20} />
+        <PersonNote size={20} />
         <Date>OCTOSOFT</Date>
         <Date>AUGUST 2021 | MAY 2022</Date>
         <Experience>
@@ -32,20 +32,22 @@ const WorkingExperience = () => {
           ⬤ Participated in weekly meetings to discuss the progress of the
           project and the team's goals
         </Experience>
-        <Pin size={20} />
-        <Date>ALT</Date>
+        <br/>
+        <PersonNote size={20} />
+        <Date>ALT / GALICIA BANK</Date>
         <Date>MAY 2022 | PRESENT</Date>
         <Experience>
-          ⬤ I work for a bank in Argentina to upgrade the self-service
-          terminals implementing the latest technology.
+          ⬤ I am currently working for Banco Galicia updating the software of
+          the self-service terminals to provide greater control and security for
+          users.
         </Experience>
         <Experience>
-          ⬤ Integration of the frontend with the bank's database, the terminals to perform
-          different operations.
+          ⬤ Development of a React application that connects with both the
+          hardware services of the terminal and the Bank's BFFT.
         </Experience>
         <Experience>
-          ⬤ Perform security measures for the frontend and avoid possible
-          information leaks.
+          ⬤ Implementation of the corresponding security measures so that it is
+          safe to operate for both the client and the Bank.
         </Experience>
       </DivQuotes>
     </BoxText>

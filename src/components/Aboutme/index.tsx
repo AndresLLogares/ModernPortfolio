@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Text,
   BoxText,
@@ -6,9 +6,10 @@ import {
   Title,
   DivQuotes,
   DivText,
-} from '../../styles/Aboutme';
-import { FilePerson } from '@styled-icons/bootstrap/FilePerson';
-import { Pin } from '@styled-icons/boxicons-solid/Pin';
+} from "../../styles/Aboutme";
+import { FilePerson } from "@styled-icons/bootstrap/FilePerson";
+import { QuoteLeft } from "@styled-icons/boxicons-solid/QuoteLeft";
+import { QuoteRight } from "@styled-icons/boxicons-solid/QuoteRight";
 const AboutMe = () => {
   return (
     <BoxText>
@@ -17,36 +18,17 @@ const AboutMe = () => {
         <Title>About Me</Title>
       </DivTitle>
       <DivQuotes>
-        <Pin size={20} />
+        <QuoteLeft size={30} />
         <DivText>
           <Text>
-            I am passionate about development, trying to improve my work and my
-            skills every day.
+          Hi, I'm Andres, an experienced developer who is constantly looking for innovative solutions to everyday problems. 
+          In my years in this industry, I have honed my analytical thinking and collaboration skills, and I love working in a team.
+          Prior to my current position as a fullstack developer at Banco Galicia, I was a junior fullstack developer at Octosoft. 
+          While working there, I got involved in blockchain development, which has been my specialty for a year. I am also currently 
+          learning about Data Science and I love it.  
           </Text>
         </DivText>
-        <Pin size={20} />
-        <DivText>
-          <Text>
-            I always work with curiosity and impetus looking for solutions to
-            the problems that arise and learning new things in this eternal path
-            of study that is to be a developer while also learning from my peers
-            and helping other team members
-          </Text>
-        </DivText>
-        <Pin size={20} />
-        <DivText>
-          <Text>
-            I have worked on projects such as NFT sales websites, landpages for
-            companies and some other development projects,
-          </Text>
-        </DivText>
-        <Pin size={20} />
-        <DivText>
-          <Text>
-            I am currently working on a project in Argentina for Banco Galicia
-            to update their Self-Service Kiosk.
-          </Text>
-        </DivText>
+        <QuoteRight size={30} />
       </DivQuotes>
     </BoxText>
   );

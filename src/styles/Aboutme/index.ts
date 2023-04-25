@@ -50,7 +50,8 @@ export const DivText = styled.div`
   justify-content: center;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 5vh;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 `;
 
 export const Text = styled.p`
