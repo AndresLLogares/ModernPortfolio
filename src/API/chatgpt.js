@@ -1,6 +1,6 @@
 const { Configuration, OpenAIApi } = require("openai");
 const apiKey = process.env.REACT_APP_API_KEY;
-
+console.log(apiKey);
 const configuration = new Configuration({
   apiKey: apiKey,
 });
@@ -33,7 +33,7 @@ const saveChatLocal = (user, response) => {
     messages: response,
     date: dateNow(),
   });
-  
+
   localStorage.setItem("chat", JSON.stringify(messages));
 };
 
@@ -51,4 +51,4 @@ async function createCompletionChatGTP(message) {
   return response;
 }
 
-export default createCompletionChatGTP
+export default createCompletionChatGTP;

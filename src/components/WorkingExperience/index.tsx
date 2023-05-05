@@ -32,9 +32,9 @@ const WorkingExperience = () => {
           ⬤ Participated in weekly meetings to discuss the progress of the
           project and the team's goals
         </Experience>
-        <br/>
+        <br />
         <PersonNote size={20} />
-        <Date>ALT / GALICIA BANK</Date>
+        <Date>ALT / BANCO GALICIA</Date>
         <Date>MAY 2022 | PRESENT</Date>
         <Experience>
           ⬤ I am currently working for Banco Galicia updating the software of

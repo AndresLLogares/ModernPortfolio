@@ -35,10 +35,10 @@ const NavBar = (props: any) => {
         <TextButton>Contact Me</TextButton>
         <ArrowRightSquareFill size={20} />
       </MenuItem>
-      <MenuItem onClick={() => navigate("/chatgpt")}>
+      {/*       <MenuItem onClick={() => navigate("/chatgpt")}>
         <TextButton>ChatGPT</TextButton>
         <ArrowRightSquareFill size={20} />
-      </MenuItem>
+      </MenuItem> */}
     </Menu>
   );
 };
