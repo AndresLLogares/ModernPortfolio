@@ -21,11 +21,13 @@ const AboutMe = () => {
         <QuoteLeft size={30} />
         <DivText>
           <Text>
-          Hi, I'm Andres, an experienced developer who is constantly looking for innovative solutions to everyday problems. 
-          In my years in this industry, I have honed my analytical thinking and collaboration skills, and I love working in a team.
-          Prior to my current position as a fullstack developer at Banco Galicia, I was a junior fullstack developer at Octosoft. 
-          While working there, I got involved in blockchain development, which has been my specialty for a year. I am also currently 
-          learning about Data Science and I love it.  
+            Hi, I'm Andres, an experienced and innovative developer with a
+            passion for solving everyday problems. With a strong background in
+            the industry, I have developed highly refined analytical thinking
+            and collaboration skills, making me an effective team player. I am
+            always eager to expand my knowledge and stay up-to-date with the
+            latest technologies. I am currently exploring new technologies and
+            actively learning, which fuels my passion for growth and innovation.
           </Text>
         </DivText>
         <QuoteRight size={30} />
