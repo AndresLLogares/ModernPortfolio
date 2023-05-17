@@ -19,7 +19,7 @@ const WorkingExperience = () => {
           prioritizing user control and security.
         </Experience>
         <Experience>
-          ⬤Developing a React application that seamlessly integrates with both
+          ⬤ Developing a React application that seamlessly integrates with both
           terminal hardware services and the Bank's BFFT.
         </Experience>
         <Experience>
