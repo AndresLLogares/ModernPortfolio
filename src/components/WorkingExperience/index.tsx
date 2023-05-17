@@ -36,11 +36,11 @@ const WorkingExperience = () => {
         <Date>OCTOSOFT</Date>
         <Date>AUGUST 2021 | MAY 2022</Date>
         <Experience>
-          ⬤Developed and structured feature-rich web client websites, ensuring
+          ⬤ Developed and structured feature-rich web client websites, ensuring
           adherence to company policies and high-quality code standards.
         </Experience>
         <Experience>
-          ⬤.Worked closely with project managers and creative teams to deliver
+          ⬤ Worked closely with project managers and creative teams to deliver
           original and effective solutions, providing expert advice to clients.
         </Experience>
         <Experience>
@@ -49,8 +49,8 @@ const WorkingExperience = () => {
           websites.
         </Experience>
         <Experience>
-          ⬤Actively participated in weekly progress meetings, aligning with team
-          goals and discussing project advancements.
+          ⬤ Actively participated in weekly progress meetings, aligning with
+          team goals and discussing project advancements.
         </Experience>
         <br />
       </DivQuotes>
