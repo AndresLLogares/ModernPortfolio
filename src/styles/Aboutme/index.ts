@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Colors } from '../colors';
-import { AnimationBox } from '../Animations/index';
+import styled from "styled-components";
+import { Colors } from "../colors";
+import { AnimationBox } from "../Animations/index";
 
 export const BoxText = styled.div`
   display: flex;
@@ -30,7 +30,7 @@ export const Title = styled.h3`
   letter-spacing: 1px;
   margin: 0;
   margin-left: 10px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 `;
 
 export const DivQuotes = styled.div`
@@ -42,6 +42,7 @@ export const DivQuotes = styled.div`
   width: 100%;
   ${AnimationBox}
   animation: scale-in-center 1s cubic-bezier(0.150, 0.460, 0.450, 0.940) both;
+  overflow-y: auto;
 `;
 
 export const DivText = styled.div`
@@ -60,6 +61,6 @@ export const Text = styled.p`
   font-weight: bold;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: ${Colors.black};
 `;
